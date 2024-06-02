@@ -8,3 +8,4 @@ INSERT INTO cliente (id, nome) VALUES (7, 'Cliente7');
 INSERT INTO cliente (id, nome) VALUES (8, 'Cliente8');
 INSERT INTO cliente (id, nome) VALUES (9, 'Cliente9');
 INSERT INTO cliente (id, nome) VALUES (10, 'Cliente10');
+INSERT INTO cliente (id, nome) VALUES (11, 'Cliente11');
