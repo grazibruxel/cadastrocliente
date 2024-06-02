@@ -1,21 +1,34 @@
-# Template Name
+# API Cadastro Cliente
 
-spring-boot replit template.
+Aplicação utilizando Spring Boot com Rest Template
 
-__THIS IS NOT MULTI MODULE PROJECT!__
+# Uso
 
-# Usage
+É possível usar os métodos POST, PUT, DELETE, GET
 
-Install and run.
+# POST
+__Adicionar um Cliente__
 
-# troubleshooter
+curl -X POST https://a4272d3e-f68f-4816-948b-9deda6c76b9e-00-3ck5elr1uvk17.spock.replit.dev:3000/api/v1/cliente/criar -H "Content-Type: application/json" -d '{"nome": "Nome do Cliente"}'
 
-1. env
+# PUT
+__Alterar um Cliente__
 
-   os environment not effect, so javac/java command in compile/run execute error.
+curl -X PUT https://a4272d3e-f68f-4816-948b-9deda6c76b9e-00-3ck5elr1uvk17.spock.replit.dev:3000/api/v1/cliente/atualizar/{id} -H "Content-Type: application/json" -d '{"nome": "Nome do Cliente"}'
 
-   you can use "mvn clean package" for compile, and "java -jar target/*.jar" for run.
+# DELETE
+__Excluir um Cliente__
 
-2. unfree package
+curl -X DELETE https://a4272d3e-f68f-4816-948b-9deda6c76b9e-00-3ck5elr1uvk17.spock.replit.dev:3000/api/v1/cliente/deletar/{id} -H "Content-Type: application/json"
 
-   mark allowUnfree as true not work in file '.config/nixpkgs/config.nix', though linked to '~/.config/nixpkgs/config.nix'
+# GET
+__Buscar um Cliente__
+
+curl -X GET https://a4272d3e-f68f-4816-948b-9deda6c76b9e-00-3ck5elr1uvk17.spock.replit.dev:3000/api/v1/cliente/get/{id} -H "Content-Type: application/json"
+
+# GET
+__Listar os Clientes__
+
+curl -X GET https://a4272d3e-f68f-4816-948b-9deda6c76b9e-00-3ck5elr1uvk17.spock.replit.dev:3000/api/v1/cliente/listar -H "Content-Type: application/json"
+
+
